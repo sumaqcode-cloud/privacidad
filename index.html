@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Política de privacidad de Alerta Perú, aplicación independiente de información preventiva desarrollada por SumaqCodeStudio.">
+
+  <meta name="theme-color" content="#0f2942">
+
+  <title>Política de Privacidad | Alerta Perú</title>
+
+  <style>
+    :root {
+      --primary: #0f2942;
+      --primary-light: #183e5e;
+      --accent: #e63946;
+      --text: #1e293b;
+      --muted: #64748b;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --notice-bg: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 40px 18px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(15, 41, 66, 0.08);
+    }
+
+    header {
+      position: relative;
+      background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+      );
+      color: #fff;
+      padding: 42px 36px 36px;
+      border-bottom: 5px solid var(--accent);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #cbd5e1;
+      margin-bottom: 18px;
+    }
+
+    .brand-dot {
+      width: 9px;
+      height: 9px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    header h1 {
+      font-size: clamp(1.7rem, 4vw, 2.2rem);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 22px;
+      font-size: 0.82rem;
+      color: #cbd5e1;
+    }
+
+    main {
+      padding: 38px 36px;
+    }
+
+    .intro {
+      padding: 20px 22px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
+    section {
+      margin-top: 32px;
+    }
+
+    section:first-of-type {
+      margin-top: 0;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .section-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 29px;
+      height: 29px;
+      border-radius: 8px;
+      background: #eaf0f6;
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 0.96rem;
+      margin-bottom: 13px;
+    }
+
+    ul {
+      padding-left: 23px;
+      margin: 12px 0 16px;
+    }
+
+    li {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    strong {
+      color: #172b40;
+      font-weight: 700;
+    }
+
+    a {
+      color: #1d5f91;
+      font-weight: 600;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      background: var(--notice-bg);
+      border-left: 4px solid #2563eb;
+      padding: 18px 20px;
+      border-radius: 8px;
+      margin: 22px 0;
+    }
+
+    .notice strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--primary);
+    }
+
+    .warning {
+      background: #fff7ed;
+      border-left: 4px solid #ea580c;
+      padding: 18px 20px;
+      border-radius: 8px;
+      margin: 22px 0;
+    }
+
+    .warning strong {
+      color: #9a3412;
+    }
+
+    .contact-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      padding: 22px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .contact-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #f1f5f9;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 24px 18px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer strong {
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 15px 10px;
+      }
+
+      .container {
+        border-radius: 12px;
+      }
+
+      header {
+        padding: 30px 22px;
+      }
+
+      main {
+        padding: 28px 21px;
+      }
+
+      h2 {
+        font-size: 1.08rem;
+      }
+
+      .intro {
+        padding: 16px;
+      }
+
+      .header-meta {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <span class="brand-dot"></span>
+        SumaqCodeStudio
+      </div>
+
+      <h1>Política de Privacidad</h1>
+
+      <p>
+        Alerta Perú — Información, prevención y acceso a fuentes oficiales.
+      </p>
+
+      <div class="header-meta">
+        <span>Última actualización: 19 de noviembre de 2026</span>
+        <span>Aplicación independiente</span>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="intro">
+        <p>
+          En <strong>Alerta Perú</strong> valoramos la privacidad de
+          nuestros usuarios. Esta política explica cómo funciona
+          el tratamiento de información dentro de la aplicación,
+          qué permisos utiliza y qué ocurre cuando accedes a
+          servicios externos.
+        </p>
+      </div>
+
+      <section>
+        <h2>
+          <span class="section-number">01</span>
+          Introducción
+        </h2>
+
+        <p>
+          La presente Política de Privacidad establece las
+          condiciones de tratamiento de información relacionadas
+          con la aplicación móvil <strong>Alerta Perú</strong>,
+          desarrollada por <strong>SumaqCodeStudio</strong>.
+        </p>
+
+        <p>
+          Alerta Perú es una aplicación independiente con fines
+          informativos, educativos y preventivos. Está diseñada
+          para ofrecer herramientas y contenido de referencia
+          directamente desde el dispositivo del usuario.
+        </p>
+
+        <p>
+          Esta política se desarrolla considerando la Ley
+          N.º 29733, Ley de Protección de Datos Personales del Perú,
+          y su reglamento vigente, así como las políticas aplicables
+          de Google Play.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">02</span>
+          Información que recopilamos
+        </h2>
+
+        <p>
+          Alerta Perú está diseñada para funcionar principalmente
+          de manera local, sin requerir la creación de una cuenta
+          ni el registro obligatorio de datos personales.
+        </p>
+
+        <p>Respecto a la información del usuario:</p>
+
+        <ul>
+          <li>
+            <strong>Datos personales:</strong>
+            No solicitamos nombres, documentos de identidad,
+            contraseñas ni información de registro para utilizar
+            las funciones principales de la aplicación.
+          </li>
+
+          <li>
+            <strong>Ubicación:</strong>
+            La aplicación no requiere acceso a la ubicación GPS
+            del dispositivo. Las selecciones manuales de regiones,
+            cuando están disponibles, se utilizan para organizar
+            el contenido mostrado localmente.
+          </li>
+
+          <li>
+            <strong>Reportes ciudadanos:</strong>
+            La información que el usuario registre mediante
+            funcionalidades locales se gestiona en el dispositivo
+            y no se transmite a servidores propios de SumaqCodeStudio.
+          </li>
+
+          <li>
+            <strong>Datos técnicos:</strong>
+            La aplicación no incorpora actualmente un sistema
+            propio de analítica o seguimiento del comportamiento
+            de los usuarios.
+          </li>
+        </ul>
+
+        <div class="notice">
+          <strong>Privacidad desde el diseño</strong>
+          Alerta Perú no requiere una cuenta de usuario ni dispone
+          de una infraestructura propia de servidores para
+          almacenar información personal.
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">03</span>
+          Uso de la información
+        </h2>
+
+        <p>
+          La información gestionada localmente se utiliza
+          exclusivamente para permitir el funcionamiento de
+          las características disponibles en la aplicación.
+        </p>
+
+        <ul>
+          <li>
+            Organizar el contenido informativo según las opciones
+            seleccionadas por el usuario.
+          </li>
+
+          <li>
+            Permitir el uso de herramientas de prevención
+            y funcionalidades disponibles en el dispositivo.
+          </li>
+
+          <li>
+            Facilitar el acceso a información de referencia
+            sobre eventualidades naturales y ambientales.
+          </li>
+
+          <li>
+            Mantener las preferencias y los datos locales
+            necesarios para el funcionamiento de la aplicación.
+          </li>
+        </ul>
+
+        <p>
+          Alerta Perú no utiliza la información local para
+          elaborar perfiles comerciales ni para realizar
+          publicidad personalizada.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">04</span>
+          Almacenamiento y conservación de datos
+        </h2>
+
+        <p>
+          La información generada o gestionada por las
+          funcionalidades locales de Alerta Perú permanece
+          almacenada en el dispositivo del usuario.
+        </p>
+
+        <ul>
+          <li>
+            No mantenemos una base de datos propia en servidores
+            externos para almacenar información personal.
+          </li>
+
+          <li>
+            No contamos con un sistema propio de sincronización
+            remota de los datos del usuario.
+          </li>
+
+          <li>
+            El usuario puede eliminar los datos locales
+            mediante las opciones de almacenamiento y
+            administración de aplicaciones de Android.
+          </li>
+        </ul>
+
+        <p>
+          La eliminación de la aplicación o de sus datos desde
+          los ajustes del dispositivo puede borrar la información
+          almacenada localmente.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">05</span>
+          Servicios y enlaces externos
+        </h2>
+
+        <p>
+          Alerta Perú facilita el acceso a páginas web de
+          instituciones públicas y otras fuentes externas
+          relacionadas con la prevención y atención de
+          eventualidades.
+        </p>
+
+        <p>
+          Cuando el usuario selecciona uno de estos enlaces,
+          puede ser redirigido al navegador o al servicio
+          correspondiente.
+        </p>
+
+        <p>
+          Las páginas externas tienen sus propias políticas
+          de privacidad y condiciones de uso. SumaqCodeStudio
+          no controla sus prácticas de recopilación,
+          almacenamiento o tratamiento de información.
+        </p>
+
+        <p>
+          Recomendamos consultar las políticas de privacidad
+          de cada institución o servicio externo que visites.
+        </p>
+
+        <div class="notice">
+          <strong>Importante</strong>
+          El acceso a páginas institucionales puede requerir
+          conexión a Internet. La consulta de dichos servicios
+          se realiza directamente en las plataformas externas
+          correspondientes.
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">06</span>
+          Permisos del dispositivo
+        </h2>
+
+        <p>
+          Alerta Perú puede utilizar determinados permisos
+          de Android para ofrecer funcionalidades específicas:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Acceso a Internet:</strong>
+            Permite abrir páginas web externas y consultar
+            directamente las fuentes institucionales.
+          </li>
+
+          <li>
+            <strong>Cámara y flash:</strong>
+            El permiso correspondiente permite utilizar
+            el flash físico del dispositivo como señal
+            visual mediante la función SOS. No se utiliza
+            para capturar ni almacenar fotografías.
+          </li>
+
+          <li>
+            <strong>Vibración:</strong>
+            Permite proporcionar señales hápticas en
+            determinadas funcionalidades.
+          </li>
+        </ul>
+
+        <p>
+          La aplicación no solicita permisos de ubicación
+          GPS ni utiliza servicios propios de notificaciones
+          push en su versión actual.
+        </p>
+
+        <p>
+          Los permisos pueden administrarse desde los
+          ajustes de privacidad y aplicaciones de Android.
+          La disponibilidad de algunas funcionalidades
+          puede depender de los permisos concedidos y
+          de las características del dispositivo.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">07</span>
+          Privacidad de menores de edad
+        </h2>
+
+        <p>
+          Alerta Perú es una aplicación de carácter
+          informativo y preventivo dirigida al público
+          general. No está diseñada específicamente
+          para recopilar información personal de menores
+          de edad.
+        </p>
+
+        <p>
+          No solicitamos la creación de cuentas ni el
+          registro obligatorio de datos personales para
+          acceder a las funciones principales.
+        </p>
+
+        <p>
+          Recomendamos que los menores utilicen la
+          aplicación bajo la orientación de sus padres
+          o tutores.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">08</span>
+          Seguridad de la información
+        </h2>
+
+        <p>
+          Aplicamos medidas razonables de desarrollo
+          para proteger la información gestionada por
+          la aplicación y reducir el riesgo de accesos
+          no autorizados.
+        </p>
+
+        <p>
+          El almacenamiento local de información depende
+          también de las medidas de seguridad del propio
+          dispositivo, su sistema operativo y la
+          configuración establecida por el usuario.
+        </p>
+
+        <p>
+          Ningún sistema informático puede garantizar
+          una seguridad absoluta. Por ello, recomendamos
+          mantener actualizado el sistema operativo
+          y utilizar las medidas de protección
+          disponibles en el dispositivo.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">09</span>
+          Derechos del usuario y cambios en esta política
+        </h2>
+
+        <p>
+          Los usuarios pueden solicitar información
+          sobre el tratamiento de sus datos personales
+          y ejercer los derechos que les correspondan
+          conforme a la legislación peruana aplicable.
+        </p>
+
+        <p>
+          Debido al funcionamiento local de Alerta Perú,
+          la eliminación de los datos almacenados en
+          el dispositivo puede realizarse desde los
+          ajustes de Android.
+        </p>
+
+        <p>
+          SumaqCodeStudio podrá actualizar esta política
+          para reflejar cambios en las funcionalidades
+          de la aplicación, sus prácticas de privacidad
+          o las disposiciones legales aplicables.
+        </p>
+
+        <p>
+          Las modificaciones se publicarán en esta
+          misma página indicando la fecha de
+          actualización correspondiente.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          <span class="section-number">10</span>
+          Contacto
+        </h2>
+
+        <p>
+          Para consultas relacionadas con esta Política
+          de Privacidad, el funcionamiento de Alerta Perú
+          o solicitudes relacionadas con el tratamiento
+          de información personal, puedes comunicarte
+          con nosotros mediante el siguiente correo:
+        </p>
+
+        <div class="contact-card">
+          <p>
+            <strong>Desarrollador:</strong><br>
+            SumaqCodeStudio
+          </p>
+
+          <p>
+            <strong>Aplicación:</strong><br>
+            Alerta Perú
+          </p>
+
+          <p>
+            <strong>Correo de contacto:</strong><br>
+            <a href="mailto:sumaqcode@gmail.com">
+              sumaqcode@gmail.com
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <div class="warning">
+        <strong>Aviso sobre independencia institucional</strong>
+        Alerta Perú es una aplicación independiente
+        desarrollada por SumaqCodeStudio. No es una
+        aplicación oficial del Gobierno del Perú,
+        no representa a ninguna entidad gubernamental
+        ni está afiliada o respaldada por instituciones
+        públicas.
+        <br><br>
+        Su finalidad es exclusivamente informativa,
+        educativa y preventiva. No sustituye los
+        comunicados oficiales ni los sistemas de
+        alerta de las autoridades competentes.
+      </div>
+
+    </main>
+
+    <footer>
+      <strong>SumaqCodeStudio</strong>
+      <br>
+      Alerta Perú · Aplicación independiente
+      <br><br>
+      © 2026 SumaqCodeStudio. Todos los derechos reservados.
+    </footer>
+
+  </div>
+
+</body>
+</html>
